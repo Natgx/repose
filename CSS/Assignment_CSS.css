@@ -1,0 +1,25 @@
+#Aquamarine_Paragraph { /*This section shows using of the id attribute to change the format and style of a element*/
+	color: #7FFFD4;
+	text-align: center
+}/*END of section*/
+
+.first_Class { /*This section shows the use of the class attribute to change the format and style of an element*/
+	background-color: green;
+	color: orange;
+	font-size: large;
+	text-decoration: underline;
+	font-weight: bold;
+	text-align: center
+}
+
+.second_Class {
+	background-color: black;
+	color: white;
+	font-size: small;
+	text-align: right
+}
+
+#Shadows {
+	text-shadow: 2px 3px 5px green
+}
+/*END of section*/

@@ -1,0 +1,13 @@
+table {
+	border: 5px solid green
+}
+
+th:hover {
+	background-color: aquamarine;
+	color: orange
+}
+
+td {
+	text-align: center
+}
+

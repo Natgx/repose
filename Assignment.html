@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Renewed</title>
+		<meta name="author" content="Nathaniel">
+		<meta charset="utf-8">
+		<script src="JS/Alert.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/Assignment_CSS.css">
+	</head>
+	<body>
+		<!--This section of the code is just showing how to create a navbar which consist of navigation links within it, which takes the viewer of the page to different webpages linked below using the a tag and the href
+		"hypertext reference" attribute-->
+		<nav>
+			<a href="HTML_HEADERS.html">Headers Webpage</a> |
+			<a href="html.html">Basic HTML Webpage</a> |
+			<a href="https://gundamevolution.com/en/">Gundam Overwatch</a> |
+			<a href="https://www.aq.com/">My Favorite Old Game</a> |
+			<a href="#Local_Videos">Local Video Section</a> <!--This code right here shows the use of id attributes to link to a portion of a page with the same identifier-->
+		</nav>
+		<!--END of Navbar section-->
+		
+		<p>Hello, world!</p>
+		<h2>This is an Implicit Link:</p> <!--for it's dog picture file is in the same folder as this file, so this means we can link the file as follows below-->
+		<a href="Dog.html">Check out this cute dog!</a>
+		<h2>This is an Explicit Link:</h2> <!--for it's dog picture is located on another website and is not on the same drive or folder as the file-->
+		<a href="https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg?fit=728%2C524">Here is another cute dog to check out!</a>
+		
+		<!--This section is an assignment/code to show a video from a external source, this video was grabbed on youtube-->
+		<p>Want to see a video of a cute dog, watch the video below:</p>
+		<embed style="width: 750px; height: 450px" src="https://www.youtube.com/embed/dFg8Nu2X5Mo" type="video/mp4">
+		<!--END of this section, note that the code used to display the video is the embed tag with the style, src, and type attributes. We removed the watch=v portion and replaced it with embed/-->
+		
+		<!--This portion of the code is using the Javascript code which is sourced on the head section and this basically just shows a colored sentence once the button has been clicked which activates the onclick event and proceeds to 
+		initiate the function Give_Words, which all its code is displayed on the Javascript file.-->
+		<button onclick="Give_Words()">Click me to show a colored sentence.</button>
+		<p id="Input"></p>
+		<!--END Note:The ID of the paragraph tag has been taken by the "document.getElementById.innerHTML" and has been given the value of the variable changeColor in the Javascript file sourced above-->
+		
+		<!--This section shows on how to change the font color of any tag/element. using the HTML/CSS color name and the hex code "a way of specifying colors using hexadecimal values".-->
+		<p>
+			<font color="blue" face="Arial" size="5">
+				I am color blue.
+			</font></p>
+		<p>
+			<font color="#FF0000" face="Impact" size="10">
+				I am color red.
+			</font></p>
+		<!--END of this section-->
+		
+		<!--This section shows the paragraph becoming bold, italicized, and underlined using these elements below:-->
+		<p>
+			<b>I am bold, </b><i>I am italicized, </i><u>I am underlined.</u>
+		</p>
+		<!--END of this section.-->
+		
+		<!--In this section of the code, I will be placing a image correctly to display it on a webpage and will also be place it incorrectly to make use of the alt attribute Fun Fact: 96px is one Inch-->
+		<img src="DogPhoto1.jpg" height="250px" width="250px" alt="Please refresh the page, for the image can not be loaded."> 
+		<img src="DogPhoto1" height="250px" width="250px" alt="Please refresh the page, for the image can not be loaded.">
+		<!--END of this section Note: the second image does not load because it is missing the .jpg "DogPhoto1.jpg" which in the end uses the alt attribute. The alt attribute replaces the image with text if the image does not succesfully load-->
+		
+		<!--This section will inclue the use of the div and style tags to change the color of the paragraphs-->
+		<div style="color: yellow">
+			<h1>Hi I am a yellow h1</h1>
+			<p>Hi I am a yellow paragraph</p>
+		</div>
+		<style>
+			#Brown {
+				color:brown;
+			}
+		</style>
+		<p id="Brown">Hi I'm color brown</p>
+		<!--END Note: This section is styling the paragraphs and headers with the style tag and attribute, difference is the style of div tag will only affect those within it and the style tag itself will affect based on the id, element, class you give it-->
+		
+		<!--This section is the first time I will link the seperate CSS file to this HTML file, above you will see the link element which i used the rel, type, and href attribute to link the CSS file to this HTML file-->
+		<p id="Aquamarine_Paragraph">My color is Aquamarine</p>
+		<!--END-->
+		
+		<!--This section shows the use of the class attribute to change the style of elements-->
+		<p class="first_Class">Hi I have a green background and orange text!</p>
+		<p class="second_Class">Hi I have a black background and white text!</p>
+		<p class="first_Class">Hi I am the same as the other guyXD!</p>
+		<!--END of this section-->
+		
+		<!--This section of the code uses HTML character entities, which is just codes that allow you to write down reserved words or symbols such as "<" -->
+		<p id="Shadows">Hi this is the greater than symbol &gt; and this is the and symbol &amp;</p>
+		<!--END of this section-->
+		
+		<!--This section will include the use of div tag and everything inside this will have a certain style-->
+		<div style="color: blue; background-color: pink">
+			<h1>Hi we both have pink backgrounds and....</h1>
+			<p>Blue Text!</p>
+		</div>
+		<!--END of this section-->
+		
+		<!--This section will show the use of the span, section, line break tags and the use of non-breaking space character entity &nbsp;-->
+		<section>
+		<p>This sentence will continue...<br>
+		<span style="color: green; font-weight: bold">in a new line and will change to the color green,</span><br>
+		<span style="color: aquamarine; font-weight: bold">and will end here with the text color being aquamarine. This sentence ended at 12:14&nbsp;pm.</span>
+		</p>
+		</section>
+		<!--END of this section-->
+		
+		<!--This section shows how to create a new tab when clicking a link instead of going to the linked electronic file or website on your current tab when clicked-->
+		<p>Check out this pokemon or digimon website:</p>
+		<a href="https://www.pokemon.com/us" target="new">Pokemon!</a><br>
+		<a href="https://en.bandainamcoent.eu/digimon/digimon-survive" target="_blank">Digimon!</a>
+		<!--END of this section-->
+		<br>
+		<!--This section of code shows use of the em tag which is short for adding emphasis on you text-->
+		<em>I am emphasized text!</em>
+		<!--End of this section-->
+		
+		<!--This section of the code shows the use of the form tag to create obviously a form which you can input information to send to the web server or another external website-->
+		<br>
+		<h1>This is a form:</h1>
+		<form action="" method="get">
+			First name: <input type="text" name="First_Name"><br>
+			Last name: <input type="text" name="Last_Name"><br>
+			Password: <input type="password" name="Password"><br>
+			Email: <input type="email" name="Email"><br>
+			<input type="submit" value="Submit">
+		</form>
+		<!--END of this section-->
+		
+		<!--This section makes use of the video tags, this differs from the external file videos. Use this if you want to make use of videos in your local repository and not file in external places-->
+		<video id="Local_Videos" width="750" height="400" controls>
+			<source src="Local_File_Insert.mp4" type="video/mp4">
+			<source src="Local_File_Insert.ogg" type="video/ogg">
+			Looks like your video did not load, please refresh your browser or the browser may not support the video tag. Use Google Chrome!<!--Normally you would use a alt attribute for this but when using the video tag it is not needed, This will display if the video is not working or displaying properly-->
+		</video>
+		<!--END of this section-->
+		
+		<!--This section of the code shows the use of the iframe tag-->
+		<iframe src="https://www.youtube.com/embed/VfMgKT_op9k" width="750px" height="500px" controls></iframe>
+		<!--END of this section-->
+		
+		<footer>
+			&copy;NathanielStudios
+		</footer>
+	</body>
+</html>
